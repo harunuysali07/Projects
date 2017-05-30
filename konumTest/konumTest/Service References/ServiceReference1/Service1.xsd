@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/konumappservice" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/konumappservice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="konumbilgileri">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aciklama" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="x" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="y" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="konumbilgileri" nillable="true" type="tns:konumbilgileri" />
+</xs:schema>

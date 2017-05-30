@@ -1,0 +1,1 @@
+c:\users\harun\documents\visual studio 2015\Projects\Mutex\Mutex\bin\Debug\Mutex.exe.config

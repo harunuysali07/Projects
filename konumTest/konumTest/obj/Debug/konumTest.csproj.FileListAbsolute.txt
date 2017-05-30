@@ -1,0 +1,9 @@
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\bin\Debug\konumTest.exe.config
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\bin\Debug\konumTest.exe
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\bin\Debug\konumTest.pdb
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.csprojResolveAssemblyReference.cache
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.Form1.resources
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.Properties.Resources.resources
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.csproj.GenerateResource.Cache
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.exe
+c:\users\harun\documents\visual studio 2015\Projects\konumTest\konumTest\obj\Debug\konumTest.pdb

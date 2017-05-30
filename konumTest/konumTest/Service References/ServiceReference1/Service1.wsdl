@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://msevinc-001-site1.ctempurl.com/DD/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://msevinc-001-site1.ctempurl.com/DD/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://msevinc-001-site1.ctempurl.com/DD/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://msevinc-001-site1.ctempurl.com/DD/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/konumappservice" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kayitol_InputMessage">
+    <wsdl:part name="parameters" element="tns:kayitol" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kayitol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kayitolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipet_InputMessage">
+    <wsdl:part name="parameters" element="tns:takipet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:takipetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_onaylanmayantakipciler_InputMessage">
+    <wsdl:part name="parameters" element="tns:onaylanmayantakipciler" />
+  </wsdl:message>
+  <wsdl:message name="IService1_onaylanmayantakipciler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:onaylanmayantakipcilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takiponay_InputMessage">
+    <wsdl:part name="parameters" element="tns:takiponay" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takiponay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:takiponayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipdogrulama_InputMessage">
+    <wsdl:part name="parameters" element="tns:takipdogrulama" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipdogrulama_OutputMessage">
+    <wsdl:part name="parameters" element="tns:takipdogrulamaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_konumkaydet_InputMessage">
+    <wsdl:part name="parameters" element="tns:konumkaydet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_konumkaydet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:konumkaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_konumbilgial_InputMessage">
+    <wsdl:part name="parameters" element="tns:konumbilgial" />
+  </wsdl:message>
+  <wsdl:message name="IService1_konumbilgial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:konumbilgialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipedilenler_InputMessage">
+    <wsdl:part name="parameters" element="tns:takipedilenler" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipedilenler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:takipedilenlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kayitdogrulama_InputMessage">
+    <wsdl:part name="parameters" element="tns:kayitdogrulama" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kayitdogrulama_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kayitdogrulamaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipred_InputMessage">
+    <wsdl:part name="parameters" element="tns:takipred" />
+  </wsdl:message>
+  <wsdl:message name="IService1_takipred_OutputMessage">
+    <wsdl:part name="parameters" element="tns:takipredResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kayitol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/kayitol" message="tns:IService1_kayitol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/kayitolResponse" message="tns:IService1_kayitol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="takipet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/takipet" message="tns:IService1_takipet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/takipetResponse" message="tns:IService1_takipet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onaylanmayantakipciler">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/onaylanmayantakipciler" message="tns:IService1_onaylanmayantakipciler_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/onaylanmayantakipcilerResponse" message="tns:IService1_onaylanmayantakipciler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="takiponay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/takiponay" message="tns:IService1_takiponay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/takiponayResponse" message="tns:IService1_takiponay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="takipdogrulama">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/takipdogrulama" message="tns:IService1_takipdogrulama_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/takipdogrulamaResponse" message="tns:IService1_takipdogrulama_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="konumkaydet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/konumkaydet" message="tns:IService1_konumkaydet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/konumkaydetResponse" message="tns:IService1_konumkaydet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="konumbilgial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/konumbilgial" message="tns:IService1_konumbilgial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/konumbilgialResponse" message="tns:IService1_konumbilgial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="takipedilenler">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/takipedilenler" message="tns:IService1_takipedilenler_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/takipedilenlerResponse" message="tns:IService1_takipedilenler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kayitdogrulama">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/kayitdogrulama" message="tns:IService1_kayitdogrulama_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/kayitdogrulamaResponse" message="tns:IService1_kayitdogrulama_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="takipred">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/takipred" message="tns:IService1_takipred_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/takipredResponse" message="tns:IService1_takipred_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kayitol">
+      <soap:operation soapAction="http://tempuri.org/IService1/kayitol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takipet">
+      <soap:operation soapAction="http://tempuri.org/IService1/takipet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onaylanmayantakipciler">
+      <soap:operation soapAction="http://tempuri.org/IService1/onaylanmayantakipciler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takiponay">
+      <soap:operation soapAction="http://tempuri.org/IService1/takiponay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takipdogrulama">
+      <soap:operation soapAction="http://tempuri.org/IService1/takipdogrulama" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="konumkaydet">
+      <soap:operation soapAction="http://tempuri.org/IService1/konumkaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="konumbilgial">
+      <soap:operation soapAction="http://tempuri.org/IService1/konumbilgial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takipedilenler">
+      <soap:operation soapAction="http://tempuri.org/IService1/takipedilenler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kayitdogrulama">
+      <soap:operation soapAction="http://tempuri.org/IService1/kayitdogrulama" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takipred">
+      <soap:operation soapAction="http://tempuri.org/IService1/takipred" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://msevinc-001-site1.ctempurl.com/DD/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
